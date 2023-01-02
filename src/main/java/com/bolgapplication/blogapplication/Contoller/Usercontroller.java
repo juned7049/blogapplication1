@@ -25,7 +25,7 @@ public class Usercontroller {
 	private UserServisesImp servises;
      
     
-     @PostMapping("/User")
+     @PostMapping("/User/user")
      public ResponseEntity<UserDto> adduser( @Valid @RequestBody UserDto userdto){
     	 UserDto userdto11=this.servises.adduser(userdto);
     	 return new ResponseEntity<UserDto>(userdto11, HttpStatus.ACCEPTED);
